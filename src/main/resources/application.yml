@@ -1,0 +1,20 @@
+spring:
+  mail:
+    host: ${SMTP_HOST}
+    port: ${SMTP_HOST_PORT}
+    username: ${SMTP_USERNAME}
+    password: ${SMTP_PASSWORD}
+    protocol: smtp
+    properties.mail.smtp:
+      debug: true
+      starttls.enable: true
+      starttls.required: true
+      auth: true
+
+integration:
+  imap:
+    username: ${IMAP_USERNAME}
+    password: ${IMAP_PASSWORD}
+    host: ${IMAP_HOST}
+
+debug: true
